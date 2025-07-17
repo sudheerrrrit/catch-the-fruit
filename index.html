@@ -47,18 +47,18 @@ The game also uses music and a couple of sound effects.
             //Arrays are needed so that the same sounds
             //can overlap with each other
             var background = new Image();
-            background.src = 'Images/jungle.jpg';
+            background.src = 'jungle.jpg';
             var catchSounds = [];
             var catchSoundCounter = 0;
             for(var i = 0; i < 5; i++)
             {
                 var catchSound = new Audio();
-                catchSound.src = 'Audio/bleep.wav';
+                catchSound.src = 'bleep.wav';
                 catchSounds.push(catchSound);
             }
             
             var music = new Audio();
-            music.src = 'Audio/MarimbaBoy.wav';
+            music.src = 'MarimbaBoy.wav';
             music.loop = true;
             
             var smashSounds = [];
@@ -66,7 +66,7 @@ The game also uses music and a couple of sound effects.
             for(var i = 0; i < 5; i++)
             {
                 var smash = new Audio();
-                smash.src = 'Audio/smash.mp3';
+                smash.src = 'smash.mp3';
                 smashSounds.push(smash);
             }
             
@@ -87,7 +87,7 @@ The game also uses music and a couple of sound effects.
                 this.x = canvas.width / 2;
                 this.y = canvas.height - this.playerHeight;
                 this.playerImage = new Image();
-                this.playerImage.src = 'Images/basket2.png';
+                this.playerImage.src = 'basket2.png';
                 
                 //Draws the player
                 this.render = function()
@@ -135,31 +135,31 @@ The game also uses music and a couple of sound effects.
                     {
                         this.fruitType = "banana";
                         this.fruitScore = 5 * this.fruitSpeed;
-                        this.fruitImage.src = 'Images/banana2.png';
+                        this.fruitImage.src = 'banana2.png';
                     }
                     else if(this.fruitNumber == 1)
                     {
                         this.fruitType = "apple";
                         this.fruitScore = 10 * this.fruitSpeed;
-                        this.fruitImage.src = 'Images/apple2.png';
+                        this.fruitImage.src = 'apple2.png';
                     }
                     else if(this.fruitNumber == 2)
                     {
                         this.fruitType = "orange";
                         this.fruitScore = 15 * this.fruitSpeed;
-                        this.fruitImage.src = 'Images/orange2.png';
+                        this.fruitImage.src = 'orange2.png';
                     }
                     else if(this.fruitNumber == 3)
                     {
                         this.fruitType = "pineapple";
                         this.fruitScore = 20 * this.fruitSpeed;
-                        this.fruitImage.src = 'Images/pineapple2.png';
+                        this.fruitImage.src = 'pineapple2.png';
                     }
                     else if(this.fruitNumber == 4)
                     {
                         this.fruitType = "melon";
                         this.fruitScore = 25 * this.fruitSpeed;
-                        this.fruitImage.src = 'Images/melon2.png';
+                        this.fruitImage.src = 'melon2.png';
                     }
                 }
                 
